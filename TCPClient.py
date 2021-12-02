@@ -1,7 +1,7 @@
 import socket
 
-target_host = "www.ToxSec.com"
-target_port = 80
+target_host = '0.0.0.0' # Change this to the IP/URL you want to hit
+target_port = 9998      # ''
 
 # create a socket
 # AF_INET means we are going to use a standard IPv4 connection
