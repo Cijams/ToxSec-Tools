@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be8a291-6a31-4197-ae92-bef5b3a31fa4" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/TCPServer.py" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/TCPClient.py" afterPath="$PROJECT_DIR$/TCPClient.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -280,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638415692411</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding TCPServer.py">
+      <created>1638417018972</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1638417018972</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -313,7 +318,8 @@
     <MESSAGE value="Init commit" />
     <MESSAGE value="Uploading initial TCPClient." />
     <MESSAGE value="Adding UDPClient to project." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding UDPClient to project." />
+    <MESSAGE value="Adding TCPServer.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding TCPServer.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
