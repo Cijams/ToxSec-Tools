@@ -4,6 +4,7 @@ target_host = "www.ToxSec.com"
 target_port = 80
 
 # create a socket
+# AF_INET means we are going to use a standard IPv4 connection
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # connect client
