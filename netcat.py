@@ -1,4 +1,5 @@
 import argparse
+from os import lseek
 import socket
 import shlex
 import subprocess
@@ -32,11 +33,12 @@ class NetCat:
                 data = client_socket.recv(4096)
                 if data:
                     file_buffer += data
-                else: break
+                else: 
+                    break
             
             with open(self.args.upload, 'wb') as f:
                 f.write(file_buffer)
-            message = f'Save file {self.args.upload}'
+            message = f'Saved file {self.args.upload}'
             client_socket.send(message.encode())
         
         elif self.args.command:
@@ -97,6 +99,7 @@ class NetCat:
             print('User terminated.')
             self.socket.close()
             sys.exit()
+        
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
@@ -113,7 +116,7 @@ if __name__ == '__main__':
     parser.add_argument('-e', '--execute', help='execute specified command')
     parser.add_argument('-l' '--listen', action='store_true', help='listen')
     parser.add_argument('-p', '--port', type=int, default=6666, help='specified port')
-    parser.add_argument('t', '--target', default='10.10.127.208', help='specified IP')
+    parser.add_argument('-t', '--target', default='10.10.127.208', help='specified IP')
     parser.add_argument('-u', '--upload', help='upload file')
     args = parser.parse_args()
     if args.listen:
